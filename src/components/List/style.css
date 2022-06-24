@@ -54,3 +54,10 @@ table th:nth-child(6) {
   width: 100%;
   text-align: center;
 }
+
+.container{
+  width: 50%;
+  height: 50%;
+  border-color: black;
+  
+}

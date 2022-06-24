@@ -7,6 +7,9 @@ import { Footer } from "./components/Footer";
 import { Card } from "./components/Card";
 import { faker } from "@faker-js/faker";
 import { useState } from "react";
+import But from "./components/Button";
+import ButUp from "./components/ButtonUpdate";
+import ButEmp from "./components/ButtonEmp";
 
 function App() {
   const employees = new Array(15).fill(null).map((_) => ({
@@ -51,6 +54,9 @@ function App() {
               </Card>
               <Card title="DataTable Example">
                 <EmployeeList items={employees} />
+                <ButEmp type="Get Employee"/>
+                <But type="Add"/>
+                <ButUp type="Update"/>
               </Card>
             </div>
           </main>
